@@ -167,6 +167,20 @@
           <li><a href="mafia-game2.html">برو به بازی مافیا</a></li>
    </ul>
    </div>
-           
+   <script>
+    (function(d,t) {
+      var BASE_URL="https://app.gapify.ai";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.gapifySDK.run({
+          websiteToken: 'zHpLKKNkJorFW52BY5i23Utb',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script> 
 </body>
 </html>
